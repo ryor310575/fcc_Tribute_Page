@@ -12,6 +12,8 @@
     --ligth-color:#FFF1DC;
     --font-color:#333333;
     --font-color-light:#E8D5C4;
+    --link-color: #477ca7;
+    --linl-visited-color: #74638f;
 }
 
 
@@ -27,11 +29,69 @@ font-size: 10px;
 body{
     background-color: var(--background);
     color:var( --font-color);
+    font-family: Poppins, Helvetica, sans-serif;
 }
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Banner Inicial */
 .banner{
     background-color: var(--banner-background);
     color: var(--font-color-light);
+    padding: 10px;
+    margin: 0 auto;
 }
+.banner h1{
+    font-size: 6rem;
+    text-align: center;
+}
+.banner h2{
+    font-size: 4rem;
+    text-align: center;
+  }
+
+/* Imagen */
 .img-div{
     background-color: var(--ligth-color);
+}
+  .img-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  figcaption{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  /*Informacion*/
+  .section{
+    font-size: 1.5rem;
+  }
+
+  
+  /* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+footer a {
+  color: var(--link-color);
+}
+
+footer a:visited {
+  color: var(--link-color);
+}
+
+footer a:hover {
+  color: var(--linl-visited-color);
+}
+
+footer a:active {
+  color: var(--linl-visited-color);
 }
